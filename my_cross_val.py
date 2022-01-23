@@ -1,6 +1,5 @@
 import sklearn as sk
 import numpy as np
-
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.svm import LinearSVC
@@ -50,7 +49,6 @@ def Boston50(dataset):
             b50.append(0)
 
     return np.array(b50)
-
 
 def Boston75(dataset):
     resp_var = dataset.target
