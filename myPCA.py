@@ -24,7 +24,5 @@ def ProjectDatapoints(X,W,mu):
    
    # projected data
     X_new = np.dot(W.transpose(), X_std.transpose()).transpose()
-    #X_new = X_std.dot(W.transpose())
-    
     return X_new
         
