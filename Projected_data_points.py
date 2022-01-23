@@ -1,22 +1,14 @@
 import numpy as np
-
 import sklearn as sk
 from sklearn import datasets
-
 import matplotlib.pyplot as plt
 plt.switch_backend('agg')
-
-
 from myPCA import myPCA, ProjectDatapoints
-
-
-
 
 X,r = datasets.load_digits(return_X_y=True)
 
 N = X.shape[0] # number of samples in X
 d = X.shape[1] # number of features in X
-
 
 W,mu = myPCA(X,2)
 
